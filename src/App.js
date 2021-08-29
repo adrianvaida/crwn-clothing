@@ -7,14 +7,16 @@ import ShopPage from './pages/shop/shop.components';
 
 
 import './App.css';
+import Header from './components/header/header.component';
 
 function App() {
   return (
     <div >
-      <Switch>
-        <Route exact path='/' component={HomePage} />
-        <Route exact path='/shop' component={ShopPage} />
-      </Switch>
+		<Header />
+      	<Switch>
+        	<Route exact path='/' component={HomePage} />
+        	<Route exact path='/shop' component={ShopPage} />
+        </Switch>
     </div>
   );
 }
