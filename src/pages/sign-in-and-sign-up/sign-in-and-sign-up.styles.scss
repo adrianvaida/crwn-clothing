@@ -1,0 +1,14 @@
+.sign-in-and-sign-up {
+    display: grid;
+    @media(max-width:991px) {
+        gap: 25px;
+    }
+
+    @media(min-width:992px) {
+        justify-content: space-between;
+        grid-template-columns: 1fr 1fr;
+        width: 850px;
+        margin: 30px auto;
+    }
+
+}
